@@ -1,0 +1,73 @@
+:root {
+  /* farver */
+  --white: #ffffff;
+  --black: #282826;
+  --orange: #fbc40e;
+  --purple: #343f71;
+
+  /* Distance */
+
+  --padding-1: 8px;
+  --padding-2: 1rem;
+  --grid-gap-size: ;
+
+  /* Fonts */
+
+  --font-p: ;
+  --font-h: ;
+
+  /* Font sizes */
+
+  --h1-resizable: clamp(24px, 2em, 60px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  margin: auto;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: ;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+video {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: ;
+  font-size: ;
+  font-weight: ;
+  color: var(--black);
+}
+
+p {
+  font-size: clamp(16px, 0.8em, 20px);
+  color: var(--black);
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+}
