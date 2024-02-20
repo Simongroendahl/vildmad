@@ -80,6 +80,7 @@ p {
   font-family: var(--font-family-p);
   font-weight: var(--font-weight-p);
   font-size: clamp(16px, 0.8em, 20px);
+  line-height: 1.6;
   color: var(--black);
   overflow-wrap: break-word;
   text-wrap: pretty;
