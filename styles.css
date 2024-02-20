@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
 :root {
   /* farver */
   --white: #ffffff;
-  --black: #282826;
-  --orange: #fbc40e;
-  --purple: #343f71;
+  --black: #2e282a;
+  --yellow: #ffdc23;
+  --red: #ff4343;
+  --purple: #cab6cd;
+  --turquoise: #17bebb;
+
+  /* Stroke / border design */
+  --stroke: 3px solid var(--black);
 
   /* Distance */
 
@@ -13,7 +20,9 @@
 
   /* Fonts */
 
-  --font-p: ;
+  --font-family-p: "Lato", sans-serif;
+  --font-weight-p: 400;
+  --font-weight-p-bold: 700;
   --font-h: ;
 
   /* Font sizes */
@@ -36,7 +45,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: ;
+  background-color: var(--yellow);
 }
 
 img {
@@ -66,6 +75,8 @@ h4 {
 }
 
 p {
+  font-family: var(--font-family-p);
+  font-weight: var(--font-weight-p);
   font-size: clamp(16px, 0.8em, 20px);
   color: var(--black);
   overflow-wrap: break-word;
