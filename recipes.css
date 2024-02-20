@@ -2,70 +2,72 @@
   background-color: var(--turquoise);
 }
 
-.hero {
-  text-align: center;
-  height: 750px;
-  background-image: url(billeder/madlavning.webp);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
+@media only screen and (min-width: 768px) {
+  .hero {
+    text-align: center;
+    height: 750px;
+    background-image: url(billeder/madlavning.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
 
-.overlay {
-  padding-top: 500px;
-  font-size: 50px;
-  font-family: var(--font-h);
-}
+  .grid_raavarer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    gap: 5rem;
+    margin-right: 10px;
+  }
 
-.grid_raavarer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  gap: 5rem;
-  margin-right: 10px;
-}
+  .grid_recipes img {
+    display: block;
+    max-width: 100%;
+    width: 500px;
+    height: 350px;
+    border-radius: 50px;
+    border: 2px solid;
+  }
 
-.grid_recipes {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-left: 5rem;
-  align-items: center;
-}
+  .h2_recipes {
+    text-align: left;
+    margin-top: 10rem;
+    margin-left: 5rem;
+  }
 
-h2 {
-  text-align: center;
-  margin-right: 10rem;
-  margin-left: 10rem;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
+  .overlay {
+    padding-top: 500px;
+    font-size: 50px;
+    font-family: var(--font-h);
+  }
 
-.h2_recipes {
-  text-align: left;
-  margin-top: 10rem;
-  margin-left: 5rem;
-}
+  .grid_recipes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 5rem;
+    align-items: center;
+  }
 
-.h3_recipes {
-  font-size: 25px;
-  text-align: justify;
-}
+  h2 {
+    text-align: center;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
 
-.grid_raavarer img {
-  display: block;
-  max-width: 100%;
-  width: 70%;
-  height: 100%;
-  border-radius: 50px;
-  border: 2px solid;
-}
+  .h3_recipes {
+    font-size: 25px;
+    text-align: justify;
+  }
 
-.grid_recipes img {
-  display: block;
-  max-width: 100%;
-  width: 500px;
-  height: 350px;
-  border-radius: 50px;
-  border: 2px solid;
+  .grid_raavarer img {
+    display: block;
+    max-width: 100%;
+    width: 70%;
+    height: 100%;
+    border-radius: 50px;
+    border: 2px solid;
+  }
 }
