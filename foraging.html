@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Foraging</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="layout.css">
     <script src="main.js" defer></script>
@@ -27,6 +27,7 @@
         <h1>Foraging</h1>
         <div class="bread_crumbs">
             <a href="" class="bread_links">Cities & Towns</a>
+            <img src="" alt="" class="icon">
             <a href="" class="bread_links">Villa Area</a>
         </div>
 
@@ -36,27 +37,34 @@
         <template id="forageCardTemplate">
             <article class="forageCard">
                 <img src="" alt="" class="profile_img">
-                <h1></h1>
+                <h1 class="forage_h1"></h1>
                 <div class="subsections">
-                    <img src="" alt="Map Icon">
+                    <img src="icons/map.svg" alt="Map icon" class="icon">
                     <h3>Where To Find It</h3>
                 </div>
                 <p class="find_p"></p>
                 <div class="subsections">
-                    <img src="" alt="Map Icon">
+                    <img src="icons/search.svg" alt="Search icon" class="icon">
                     <h3>How To Spot It</h3>
                 </div>
                 <p class="spot_p"></p>
                 <div class="subsections">
-                    <img src="" alt="Map Icon">
+                    <img src="icons/plant.svg" alt="Plant icon" class="icon">
                     <h3>How To Pick It</h3>
                 </div>
                 <p class="pick_p"></p>
                 <div class="subsections">
-                    <img src="" alt="Map Icon">
-                    <h3>Further Reading (Only for the brave)</h3>
+                    <img src="icons/glasses.svg" alt="Glasses Icon" class="icon">
+                    <h3>Further Reading</h3>
                 </div>
+
                 <p class="reading_p"></p>
+                <a href="" class="reading_link">
+                    <div class="buttonWrapper">
+                        <div class="buttonStyle">About me</div>
+                        <div class="buttonStyle buttonWhite">About me</div>
+                    </div>
+                </a>
                 <p class="forageViewCounter">Wow! You're viewer nr. <span class="viewCount"></span>!</p>
             </article>
         </template>

@@ -35,6 +35,7 @@ function showIngredient(ingredient) {
   copy.querySelector("p.pick_p").textContent = ingredient.howtopick;
   copy.querySelector("p.reading_p").textContent = ingredient.continuedreading;
   copy.querySelector("img.profile_img").src = ingredient.image;
+  copy.querySelector("a.reading_link").href = ingredient.about_me_link;
   const parent = document.querySelector("#ingredientsGrid");
   parent.appendChild(copy);
 }

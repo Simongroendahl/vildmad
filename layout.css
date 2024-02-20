@@ -1,0 +1,24 @@
+/* Forage card layout */
+
+.subsections {
+  display: flex;
+  gap: 8px;
+}
+
+.forage_h1 {
+  padding-bottom: 16px;
+}
+
+.forageCard {
+  padding: 0 8px;
+}
+
+.forageCard p {
+  padding-bottom: var(--padding-2);
+}
+
+.profile_img {
+  max-width: 430px;
+  height: auto;
+  border: var(--stroke);
+}

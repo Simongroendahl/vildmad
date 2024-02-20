@@ -14,12 +14,14 @@
 
   /* Stroke / border design */
   --stroke: 3px solid var(--black);
+  --border-radius: 24px;
 
   /* Distance */
 
   --padding-1: 8px;
   --padding-2: 1rem;
   --grid-gap-size: ;
+  --button-padding: 12px 48px;
 
   /* Fonts */
 
@@ -30,7 +32,9 @@
 
   /* Font sizes */
 
-  --h1-resizable: clamp(24px, 2em, 60px);
+  --h1-resizable: clamp(24px, 3em, 60px);
+  --h2-resizable: ;
+  --h3-resizable: clamp(18px, 1.6em, 60px);
 }
 
 * {
@@ -51,6 +55,10 @@ body {
   background-color: var(--yellow);
 }
 
+.forage_body {
+  background-color: var(--purple);
+}
+
 img {
   display: block;
   width: 100%;
@@ -63,8 +71,14 @@ video {
   width: 100%;
 }
 
+.icon {
+  max-width: 28px;
+  max-height: 28px;
+}
+
 a {
   text-decoration: none;
+  color: var(--black);
 }
 
 h1,
@@ -74,6 +88,11 @@ h4 {
   font-family: var(--font-h);
   font-size: var(--h1-resizable);
   color: var(--black);
+  white-space: nowrap;
+}
+
+h3 {
+  font-size: var(--h3-resizable);
 }
 
 p {
@@ -84,4 +103,47 @@ p {
   color: var(--black);
   overflow-wrap: break-word;
   text-wrap: pretty;
+}
+
+.buttonWrapper {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  place-items: center;
+  width: fit-content;
+  margin: auto;
+  transition: ease 0.3s all;
+}
+
+.buttonStyle {
+  background-color: var(--yellow);
+  border: var(--stroke);
+  font-family: var(--font-h);
+  font-size: var(--h3-resizable);
+
+  border-radius: var(--border-radius);
+  padding: var(--button-padding);
+}
+
+.buttonWhite {
+  background-color: var(--white);
+  padding: var(--button-padding);
+}
+
+.buttonWrapper > * {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.buttonWrapper .buttonStyle {
+  z-index: 2;
+}
+
+.buttonWrapper .buttonWhite {
+  z-index: 1;
+  transform: translate(6px, 6px);
+  transition: ease 0.3s all;
+}
+
+.buttonWrapper:hover {
+  transform: scale(1.1);
 }
