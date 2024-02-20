@@ -23,28 +23,20 @@
             <a href="###">Login</a>
         </div>
     </nav>
-    <div class="foraging_wrapper">
+    <main class="foraging_wrapper">
         <h1>Foraging</h1>
         <div class="bread_crumbs">
             <a href="" class="bread_links">Cities & Towns</a>
             <a href="" class="bread_links">Villa Area</a>
         </div>
-        <div class="foraging_card_wrapper">
-            <div class="card_container">
-                <div class="cards"></div>
-                <div class="cards"></div>
-                <div class="cards"></div>
-                <div class="cards"></div>
-            </div>
-            <div class="status_dots">
-                <div class="dots"></div>
-                <div class="dots"></div>
-                <div class="dots"></div>
-            </div>
-
-            <a href="" class="button">Read More</a>
-        </div>
-    </div>
+        <template id="forageCardTemplate">
+            <article class="forageCard">
+                <img src="" alt="">
+                <h3></h3>
+                <p class="forageViewCounter">Wow! You're viewer nr. <span class="viewCount"></span>!</p>
+            </article>
+        </template>
+    </main>
 
 </body>
 
