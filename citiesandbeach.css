@@ -1,0 +1,417 @@
+.background-image img {
+  height: 806px;
+  padding-bottom: 3%;
+  width: 100%;
+}
+/* background image for main kat side */
+header .background-image {
+  position: absolute;
+  top: 30px;
+  padding-bottom: 3%;
+  left: 0;
+  width: 100%;
+  height: 850px;
+  /* z-index: -1; */
+  object-fit: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  cursor: pointer;
+}
+
+/* background image for by side */
+header .background-image1 {
+  position: absolute;
+  top: 30px;
+  padding-bottom: 3%;
+  left: 0;
+  width: 100%;
+  /* height: 850px; */
+  z-index: -1;
+  display: grid;
+  grid-template-columns: 1fr;
+  object-fit: cover;
+  gap: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  cursor: pointer;
+}
+
+.background-image1 img {
+  height: 858px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* background image for strand side */
+.background-imageb {
+  position: absolute;
+  top: 30px;
+  padding-bottom: 3%;
+  left: 0;
+  width: 100%;
+  /* height: 850px; */
+  z-index: -1;
+  display: grid;
+  grid-template-columns: 1fr;
+  object-fit: cover;
+  gap: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  cursor: pointer;
+}
+.background-imageb img {
+  height: 858px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.header-content1 h1 {
+  position: absolute;
+  bottom: 160px;
+  right: 1400px;
+  color: white;
+  font-size: 55px;
+}
+
+.header-content2 h1 {
+  position: absolute;
+  bottom: 160px;
+  right: 1500px;
+  color: white;
+  font-size: 55px;
+}
+
+.mellemtxt {
+  background-color: #ff4343;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  margin-top: 915px;
+  margin-bottom: 20px;
+}
+
+.mellemtxt_beach p {
+  color: white;
+  /* font-size: 30px; */
+  padding-left: 3%;
+  font-family: var(--font-family-p);
+  font-weight: var(--font-weight-p);
+  font-size: 25px;
+  line-height: 1.6;
+  color: white;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+  text-align: center;
+}
+
+.mellemtxt_beach {
+  background-color: #ff4343;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  margin-top: 915px;
+  margin-bottom: 20px;
+}
+
+.beachimg_kategori img {
+  object-fit: cover;
+}
+
+.beachimg_kategori {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 24%px;
+  gap: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+
+  /* gap: 5px; */
+}
+
+.vand figure {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  filter: grayscale(70%);
+}
+
+.vand:hover figure {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  filter: grayscale(0%);
+}
+
+.vand h2 {
+  position: absolute;
+  bottom: 8px;
+  left: 30px;
+  top: 1700px;
+  /* font-size: 38px; */
+  color: white;
+}
+
+.dunes figure {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  filter: grayscale(70%);
+}
+.dunes:hover figure {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  filter: grayscale(0%);
+}
+
+.dunes h2 {
+  position: absolute;
+  bottom: 8px;
+  left: 640px;
+  top: 1700px;
+  /* font-size: 38px; */
+  color: white;
+}
+
+.beachimg_sidste figure {
+  display: grid;
+  grid-template-columns: 1fr;
+  object-fit: cover;
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  filter: grayscale(70%);
+}
+.beachimg_sidste:hover figure {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  filter: grayscale(0);
+}
+
+.beachimg_sidste h2 {
+  position: absolute;
+  bottom: 8px;
+  left: 1240px;
+  top: 1700px;
+  /* font-size: 38px; */
+  color: white;
+}
+
+/* mobilsite */
+@media (max-width: 800px) {
+  .beachimg_kategori {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 3%;
+  }
+}
+
+/* del img op i 3 kolonner virker ikke */
+
+/* byen kategori  */
+.city_kategori {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 3%;
+}
+
+.city_kategori img {
+  height: 460px;
+}
+
+.byen figure {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  filter: grayscale(70%);
+}
+
+.byen:hover figure {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  filter: grayscale(0%);
+}
+
+.byen h2 {
+  position: absolute;
+  bottom: 8px;
+  left: 40px;
+  top: 1600px;
+  /* font-size: 38px; */
+  color: white;
+}
+
+.villakvarter figure {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.villakvarter:hover figure {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  filter: grayscale(0%);
+}
+
+.villakvarter h2 {
+  position: absolute;
+  bottom: 8px;
+  left: 480px;
+  top: 1600px;
+  /* font-size: 38px; */
+  color: white;
+}
+
+.boligkvarter figure {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.boligkvarter:hover figure {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  filter: grayscale(0%);
+}
+
+.boligkvarter h2 {
+  position: absolute;
+  bottom: 8px;
+  left: 930px;
+  top: 1600px;
+  /* font-size: 38px; */
+  color: white;
+}
+
+.yderomraader figure {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.yderomraader:hover figure {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  filter: grayscale(0%);
+}
+
+/* filter greyscale i 80% til 0% i hover*/
+
+.yderomraader h2 {
+  position: absolute;
+  bottom: 8px;
+  left: 1378px;
+  top: 1600px;
+  /* font-size: 38px; */
+  color: white;
+}
+
+/* mobilsite */
+
+/* txt over img i header */
+
+@media (max-width: 800px) {
+  .header-content h1 {
+    z-index: 1;
+  }
+}
+
+/* h1 txt over img for hver kategori */
+@media (max-width: 900px) {
+  .city_kategori {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .header-content1 h1 {
+    z-index: 1;
+    left: 70px;
+    top: 600px;
+  }
+  .byen h2 {
+    z-index: 1;
+    top: 1500px;
+    left: 50;
+  }
+  .villakvarter h2 {
+    left: 45px;
+    top: 2000px;
+  }
+
+  .boligkvarter h2 {
+    left: 40px;
+    top: 2500px;
+  }
+  .yderomraader h2 {
+    left: 40px;
+    top: 3000px;
+  }
+}
+
+/* strand mobil site */
+@media (max-width: 900px) {
+  .beachimg_kategori {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .header-content2 h1 {
+    z-index: 1;
+    left: 70px;
+    top: 600px;
+  }
+  .vand h2 {
+    z-index: 1;
+    top: 1830px;
+    left: 55px;
+    font-size: 40px;
+  }
+  .dunes h2 {
+    left: 55px;
+    top: 2750px;
+    z-index: 1;
+    font-size: 40px;
+  }
+
+  .beachimg_sidste h2 {
+    left: 45px;
+    top: 3640px;
+    z-index: 1;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .background-image {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+/* nedenstående kode hører til desktop  */
+
+.mainh1 h1 {
+  color: white;
+}
+.header-content h1 {
+  position: absolute;
+  bottom: 160px;
+  right: 550px;
+  color: white;
+  font-size: 55px;
+}

@@ -1,0 +1,272 @@
+/* General layout */
+
+header {
+  display: flex;
+  justify-content: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-2);
+  width: 100%;
+  max-width: 1440px;
+}
+
+.nav_links {
+  display: none;
+}
+
+.sidebar {
+  height: 100vh;
+  max-height: 1080px;
+  width: 0;
+  position: fixed;
+  z-index: 12;
+  top: 0;
+  right: 0;
+  background-color: var(--red);
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sidebar.open {
+  width: 100vw;
+}
+
+.sidebar a {
+  font-family: var(--font-h);
+  font-size: var(--h2-resizable);
+  padding: 8px;
+  transition: 0.2s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#closebtn_id {
+  position: absolute;
+  top: 1.6rem;
+  right: 2rem;
+  text-decoration: none;
+}
+
+.sidebar_button {
+  width: 100%;
+  display: block;
+  padding: 9px 16px;
+  text-align: center;
+  border: none;
+  white-space: normal;
+  float: none;
+  outline: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.burger_button {
+  display: block;
+  position: absolute;
+  /*background-image: url(icons/menu.svg);
+  background-repeat: no-repeat;*/
+  border-width: 0;
+  width: 36px;
+  height: 36px;
+  top: 1.6rem;
+  right: 2rem;
+  z-index: 9;
+  aspect-ratio: 1;
+}
+
+.nav_burger {
+}
+
+.bread_crumbs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-family-p);
+  font-weight: var(--font-weight-p-bold);
+  padding: 24px var(--padding-2) 0;
+}
+
+/* Forage card layout */
+
+.subsections {
+  display: flex;
+  gap: 8px;
+}
+
+.forage_h1 {
+  padding-bottom: 16px;
+}
+
+.forageCard {
+  padding: 0 8px;
+}
+
+.forageCard p {
+  padding-bottom: var(--padding-3);
+}
+
+.profile_img {
+  max-width: 430px;
+  /*min-width: 350px;*/
+  height: fit-content;
+  border: var(--stroke);
+}
+
+.reading_link {
+  display: none;
+}
+
+.warning {
+  background-color: var(--black);
+}
+
+.col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding-2) 0;
+}
+
+.wrapperSize {
+  margin: auto;
+  max-width: var(--layout-width-small);
+  padding: var(--padding-1);
+}
+
+.forageTitle {
+  margin-top: 4rem;
+}
+
+.forageCardList {
+  transition: ease 0.3s all;
+}
+
+.forageCardList:hover {
+  transform: scale(1.1);
+}
+
+.recipe_link_wrapper {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.col-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.content_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 1440px;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.recipe_img {
+  max-height: auto;
+  max-width: 100%;
+  border: var(--stroke);
+}
+
+.video_style {
+  height: auto;
+  max-width: 100%;
+  border: var(--stroke);
+}
+
+@media only screen and (min-width: 831px) {
+  .nav_links {
+    display: flex;
+    gap: var(--padding-2);
+  }
+
+  .burger_button {
+    display: none;
+  }
+
+  #ingredientsGrid {
+    display: grid;
+  }
+
+  .forageCard {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+  }
+
+  .col-1 {
+    gap: var(--padding-3);
+  }
+
+  .col-2 {
+    order: -1;
+  }
+
+  .reading_link {
+    display: block;
+  }
+
+  .reading_link2 {
+    display: none;
+  }
+
+  .wrapperSize {
+    margin: auto;
+    max-width: var(--layout-width-xl);
+    padding: 4rem 2rem;
+  }
+
+  .content_wrapper {
+    flex-direction: row;
+    gap: 4rem;
+    max-width: 1440px;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+  }
+
+  .recipe_img {
+    max-width: 50%;
+  }
+
+  .col-4 h2 {
+    margin-bottom: 1rem;
+  }
+
+  .video_style {
+    height: auto;
+    max-width: 30%;
+    border: var(--stroke);
+  }
+}
+
+.listGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
