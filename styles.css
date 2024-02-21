@@ -144,6 +144,10 @@ p {
 
 .warning_p {
   color: var(--white);
+  text-overflow: ellipsis;
+  max-width: 900px;
+  text-align: center;
+  padding: 0 1rem;
 }
 
 .buttonWrapper {
@@ -152,6 +156,7 @@ p {
   place-items: center;
   width: fit-content;
   margin: auto;
+  padding-bottom: 2rem;
   transition: ease 0.3s all;
 }
 
