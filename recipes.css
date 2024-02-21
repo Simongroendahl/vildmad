@@ -2,43 +2,139 @@
   background-color: #17bebb;
 }
 
-.hero {
-  text-align: center;
-  height: 900px;
-  background-image: url(billeder/madlavning-kopi.webp);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
+@media only screen and (min-width: 768px) {
+  .hero {
+    text-align: center;
+    height: 750px;
+    background-image: url(billeder/madlavning.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
 
-.overlay {
-  padding-top: 500px;
-  font-size: 50px;
-  color: white;
-}
+  .hero2 {
+    text-align: center;
+    height: 750px;
+    background-image: url(billeder/kombucha.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
 
-.grid_raavarer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  gap: 5rem;
-  margin-right: 10px;
-}
+  .hero3 {
+    text-align: center;
+    height: 750px;
+    background-image: url(billeder/pastatang.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
 
-h2 {
-  text-align: center;
-  margin-right: 10rem;
-  margin-left: 10rem;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
+  .hero4 {
+    text-align: center;
+    height: 750px;
+    background-image: url(billeder/pesto.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
 
-.grid_raavarer img {
-  display: block;
-  max-width: 100%;
-  width: 60%;
-  height: 100%;
-  border-radius: 50px;
-  border: 2px solid;
+  .hero5 {
+    text-align: center;
+    height: 750px;
+    background-image: url(billeder/greensoup.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .overlay2 {
+    padding-top: 300px;
+    padding: 7rem;
+    font-size: 50px;
+    font-family: var(--font-h);
+  }
+
+  .grid_raavarer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    gap: 5rem;
+    margin-right: 10px;
+  }
+
+  .flex_recipe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*margin-left: 5rem;*/
+    margin: auto;
+    max-width: 1000px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ingredients_flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid_recipes img {
+    display: block;
+    max-width: 100%;
+    width: 500px;
+    height: 350px;
+    border-radius: 50px;
+    border: 2px solid;
+  }
+
+  .h2_recipes {
+    text-align: left;
+    margin-top: 10rem;
+    margin-left: 5rem;
+  }
+
+  .overlay {
+    padding-top: 300px;
+    padding: 7rem;
+    font-size: 50px;
+    font-family: var(--font-h);
+  }
+
+  .grid_recipes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 5rem;
+    align-items: center;
+  }
+  .h1_recipes {
+    color: white;
+    margin-top: 8rem;
+    font-size: 80px;
+  }
+  .h1_recipes2 {
+    color: black;
+
+  }
+  h2 {
+    text-align: center;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .h3_recipes {
+    font-size: 25px;
+    text-align: justify;
+  }
+
+  .grid_raavarer img {
+    display: block;
+    max-width: 100%;
+    width: 70%;
+    height: 100%;
+    border-radius: 50px;
+    border: 2px solid;
+  }
 }

@@ -13,8 +13,8 @@
 <body class="forageList_body">
     <div class="sidebar" id="minSidebar">
         <a href="javascript:void(0)" class="closebtn" id="closebtn_id" onclick="closeNav()">&times;</a>
-        <a href="#" class="sidebar_button">Foraging</a>
-        <a href="#" class="sidebar_button">Recipes</a>
+        <a href="foragelist.html" class="sidebar_button">Foraging</a>
+        <a href="recipes.html" class="sidebar_button">Recipes</a>
     </div>
 
     <header>
@@ -25,7 +25,7 @@
                 </a>
             </div>
             <div class="nav_links">
-                <a href="foraging.html">
+                <a href="foragelist.html">
                     <div class="buttonWrapper">
                         <div class="buttonStyle">Foraging</div>
                         <div class="buttonStyle buttonWhite">Foraging</div>
@@ -50,14 +50,17 @@
 
         </section>
         <section class="listGrid" id="listParent">
-            <template id="forageListTemplate">
-                <article class="forageCardList">
-                    <div class="cardListWrapper">
-                        <img src="" alt="" class="profile_img">
-                        <h3></h3>
 
-                    </div>
-                </article>
+            <template id="forageListTemplate">
+                <a class="read_more" href="foraging.html">
+                    <article class="forageCardList">
+                        <div class="cardListWrapper">
+                            <img src="" alt="" class="profile_img">
+                            <h3></h3>
+
+                        </div>
+                    </article>
+                </a>
             </template>
         </section>
 
@@ -67,7 +70,7 @@
             <video src="video/berries.webm" autoplay loop muted class="video_style"></video>
             <div class="col-4">
                 <h2>Don't Miss Out On Our <br> <span class="emphasis_span">Delicious</span> <br>Recipes!</h2>
-                <a href="">
+                <a href="recipes.html">
                     <div class="buttonWrapper">
                         <div class="buttonStyle">Read More</div>
                         <div class="buttonStyle buttonWhite">Read More</div>

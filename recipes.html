@@ -6,12 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
     <link rel="stylesheet" href="recipes.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="layout.css">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
+    <div class="sidebar" id="minSidebar">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn_id" onclick="closeNav()">&times;</a>
+        <a href="#" class="sidebar_button">Foraging</a>
+        <a href="#" class="sidebar_button">Recipes</a>
+    </div>
+    <header>
+        <nav>
+            <div class="nav_links">
+                <a href="foraging.html">
+                    <div class="buttonWrapper">
+                        <div class="buttonStyle">Foraging</div>
+                        <div class="buttonStyle buttonWhite">Foraging</div>
+                    </div>
+                </a>
+                <a href="recipes.html">
+                    <div class="buttonWrapper">
+                        <div class="buttonStyle">Recipes</div>
+                        <div class="buttonStyle buttonWhite">Recipes</div>
+                    </div>
+                </a>
+            </div>
+
+            <span class="burger_button" onclick="openNav()">
+                <img src="icons/burger.svg" alt="" class="nav_burger"></span>
+
+        </nav>
+    </header>
     <div class="hero">
         <div class="overlay">
-            <h1>Recipes</h1>
+            <div class="logo_link">
+                <a href="index.html">
+                    <img src="icons/vild-mad-logo.svg" alt="VildMad Logo" class="nav_icon">
+                </a>
+            </div>
+            <h1 class="h1_recipes">Recipes</h1>
         </div>
     </div>
 
@@ -21,63 +56,62 @@
 
     <div class="grid_raavarer">
         <div>
-            <img src="billeder/madlavning-kopi.webp" alt="madlavning">
-            <p>svamp</p>
+            <img src="billeder/juniperberries.webp" alt="juniperberries">
+            <p>Juniper berries</p>
         </div>
 
         <div>
-            <img src="billeder/madlavning-kopi.webp" alt="madlavning">
-            <p>svamp</p>
+            <img src="img/oar_weed.webp" alt="Bladderwrack">
+            <p>Bladderwrack</p>
         </div>
 
         <div>
-            <img src="billeder/madlavning-kopi.webp" alt="madlavning">
-            <p>svamp</p>
+            <img src="billeder/watercress.webp" alt="watercress">
+            <p>Watercress</p>
         </div>
 
         <div>
-            <img src="billeder/madlavning-kopi.webp" alt="madlavning">
-            <p>svamp</p>
-        </div>
-        <div>
-            <img src="billeder/madlavning-kopi.webp" alt="madlavning">
-            <p>svamp</p>
+            <img src="img/chickweed.webp" alt="Bulrush">
+            <p>Bulrush</p>
         </div>
 
-        <div>
-            <img src="billeder/madlavning-kopi.webp" alt="madlavning">
-            <p>svamp</p>
-        </div>
-
-        <div>
-            <img src="billeder/madlavning-kopi.webp" alt="madlavning">
-            <p>svamp</p>
-        </div>
-
-        <div>
-            <img src="billeder/madlavning-kopi.webp" alt="madlavning">
-            <p>svamp</p>
-        </div>
-        <div>
-            <img src="billeder/madlavning-kopi.webp" alt="madlavning">
-            <p>svamp</p>
-        </div>
-
-        <div>
-            <img src="billeder/madlavning-kopi.webp" alt="madlavning">
-            <p>svamp</p>
-        </div>
-
-        <div>
-            <img src="billeder/madlavning-kopi.webp" alt="madlavning">
-            <p>svamp</p>
-        </div>
-
-        <div>
-            <img src="billeder/madlavning-kopi.webp" alt="madlavning">
-            <p>svamp</p>
-        </div>
     </div>
+    <h2 class="h2_recipes">Recipes with Juniper berries</h2>
+    <div class="grid_recipes">
+        <div>
+            <h3 class="h3_recipes">Kombucha with juniper berries</h3>
+            <a href="juniperberries.html"><img src="billeder/kombucha.webp" alt="kombucha"></a>
+        </div>
+
+    </div>
+
+    <h2 class="h2_recipes">Recipes with Bladder Wrack</h2>
+    <div class="grid_recipes">
+        <div>
+            <h3 class="h3_recipes">Pasta with seaweed and herbs</h3>
+            <a href="bladderwrack.html"><img src="billeder/pastatang.webp" alt="pasta"></a>
+        </div>
+
+    </div>
+
+    <h2 class="h2_recipes">Recipes with Watercress</h2>
+    <div class="grid_recipes">
+        <div>
+            <h3 class="h3_recipes">Herb pesto with nuts</h3>
+            <a href="watercress.html"><img src="billeder/pesto.webp" alt="pesto"></a>
+        </div>
+
+    </div>
+    <h2 class="h2_recipes">Recipes with Bulrush</h2>
+    <div class="grid_recipes">
+        <div>
+            <h3 class="h3_recipes">Green soup with herbs</h3>
+            <a href="bulrush.html"><img src="billeder/greensoup.webp" alt="soup"></a>
+        </div>
+
+    </div>
+
+
 
 </body>
 

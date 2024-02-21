@@ -1,0 +1,147 @@
+body {
+    background-color: var(--red);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: auto;
+}
+
+.rectangle-container {
+    
+    width: 400px;
+    height: 120px;
+    background-color: var(--purple);
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+}
+
+.rectangle-container h2 {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 5px;
+
+}
+
+.foraging {
+    width: 200px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.imageflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.imageflex h2 {
+    text-align: center;
+}
+
+
+.imageflex h1 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.index-p {
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+
+.logo img{
+    width: 800px;
+    height: auto;
+}
+
+.rectangle-container{
+    
+    position: relative;
+    background-color: #cab6cd;
+    width: 1300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    
+}
+
+.rectangle-container h2 {
+    text-align: center;
+}
+
+.grid_2-1 {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.imageflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    margin-top: 2rem;
+    
+}
+
+.imageContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer h2 {
+    text-align: center;
+}
+
+.imageflex img {
+    height: auto;
+    width: 40%;
+    margin: auto;
+    
+}
+
+.imageflex h1 {
+    margin-right: 225px;
+}
+
+}
+
+footer {
+    background-color: var(--black);
+    padding: 20px 40px;
+    margin-top: 5rem;
+}
+
+.footerdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h3, p {
+    color: white;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+
+
