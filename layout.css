@@ -10,7 +10,7 @@ nav {
   align-items: center;
   padding: var(--padding-2);
   width: 100%;
-  max-width: 1250px;
+  max-width: 1440px;
 }
 
 .nav_links {
@@ -193,6 +193,12 @@ nav {
   border: var(--stroke);
 }
 
+.video_style {
+  height: auto;
+  max-width: 100%;
+  border: var(--stroke);
+}
+
 @media only screen and (min-width: 831px) {
   .nav_links {
     display: flex;
@@ -241,7 +247,7 @@ nav {
     max-width: 1440px;
     justify-content: center;
     align-items: center;
-    padding: 2rem 1rem;
+    padding: 4rem 1rem;
   }
 
   .recipe_img {
@@ -250,6 +256,12 @@ nav {
 
   .col-4 h2 {
     margin-bottom: 1rem;
+  }
+
+  .video_style {
+    height: auto;
+    max-width: 30%;
+    border: var(--stroke);
   }
 }
 

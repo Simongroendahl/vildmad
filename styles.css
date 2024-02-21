@@ -181,3 +181,7 @@ p {
 .buttonWrapper:hover {
   transform: scale(1.1);
 }
+
+.emphasis_span {
+  font-size: var(--h1-resizable);
+}
