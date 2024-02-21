@@ -14,7 +14,7 @@ function closeNav() {
   document.getElementById("minSidebar").classList.remove("open");
 }
 
-fetch("https://ytcuyyezqmwdqdpjhotr.supabase.co/rest/v1/vildmad", {
+fetch(`https://ytcuyyezqmwdqdpjhotr.supabase.co/rest/v1/vildmad?`, {
   method: "GET",
   headers: {
     apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl0Y3V5eWV6cW13ZHFkcGpob3RyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc5NDY4OTcsImV4cCI6MjAyMzUyMjg5N30.F5qT6xHF4HXJc6yuBAtGegp4xfqgo5aM29_Yg2767LA",
@@ -34,6 +34,7 @@ function showList(card) {
   const copy = temp.cloneNode(true);
   copy.querySelector("h3").textContent = card.title;
   copy.querySelector("img.profile_img").src = card.image;
+  copy.querySelector(".read_more").setAttribute("href", `foraging.html?id=${card.id}`);
   const parent = document.querySelector("#listParent");
   parent.appendChild(copy);
 }

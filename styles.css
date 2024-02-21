@@ -40,7 +40,7 @@
 
   --h1-resizable: clamp(3rem, 7vw, 7rem);
   --h2-resizable: clamp(24px, 3em, 60px);
-  --h3-resizable: clamp(18px, 1.6em, 60px);
+  --h3-resizable: clamp(24px, 1.6em, 60px);
 }
 
 * {
@@ -102,6 +102,13 @@ a {
   color: var(--black);
 }
 
+li,
+ol {
+  font-family: var(--font-family-p);
+  font-size: var(--h3-resizable);
+  color: var(--black);
+}
+
 h1,
 h2,
 h3,
@@ -135,12 +142,21 @@ p {
   text-wrap: pretty;
 }
 
+.warning_p {
+  color: var(--white);
+  text-overflow: ellipsis;
+  max-width: 900px;
+  text-align: center;
+  padding: 0 1rem;
+}
+
 .buttonWrapper {
   display: grid;
   grid-template: 1fr / 1fr;
   place-items: center;
   width: fit-content;
   margin: auto;
+  padding-bottom: 2rem;
   transition: ease 0.3s all;
 }
 
@@ -177,6 +193,10 @@ p {
 .buttonStyle:active {
   background-color: #e3c21a;
 }
+
+/*.buttonStyle:hover {
+  background-color: #e3c21a;
+}*/
 
 .buttonWrapper:hover {
   transform: scale(1.1);
