@@ -55,6 +55,7 @@ function showData(ingredient) {
   document.querySelector("img.profile_img").src = singleCard.image;
   document.querySelector("a.reading_link").href = singleCard.about_me_link;
   document.querySelector("a.reading_link2").href = singleCard.about_me_link;
+  document.querySelector("p.warning_p").textContent = singleCard.warning;
   const parent = document.querySelector("#ingredientsGrid");
   //parent.appendChild(copy);
 }
