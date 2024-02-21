@@ -19,7 +19,6 @@
     background-size: cover;
     background-position: center;
     position: relative;
-
   }
 
   .hero3 {
@@ -49,6 +48,23 @@
     position: relative;
   }
 
+  .hero6 {
+    text-align: center;
+    height: 750px;
+    background-image: url(billeder/saltetlungwort.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .hero7 {
+    text-align: center;
+    height: 750px;
+    background-image: url(billeder/muffin.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
   .overlay2 {
     padding-top: 500px;
     font-size: 50px;
