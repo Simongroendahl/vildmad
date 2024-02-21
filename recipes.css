@@ -48,25 +48,9 @@
     position: relative;
   }
 
-  .hero6 {
-    text-align: center;
-    height: 750px;
-    background-image: url(billeder/saltetlungwort.webp);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-
-  .hero7 {
-    text-align: center;
-    height: 750px;
-    background-image: url(billeder/muffin.webp);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
   .overlay2 {
-    padding-top: 500px;
+    padding-top: 300px;
+    padding: 7rem;
     font-size: 50px;
     font-family: var(--font-h);
   }
@@ -111,7 +95,8 @@
   }
 
   .overlay {
-    padding-top: 500px;
+    padding-top: 300px;
+    padding: 7rem;
     font-size: 50px;
     font-family: var(--font-h);
   }
@@ -124,6 +109,12 @@
   }
   .h1_recipes {
     color: white;
+    margin-top: 8rem;
+    font-size: 80px;
+  }
+  .h1_recipes2 {
+    color: black;
+
   }
   h2 {
     text-align: center;
