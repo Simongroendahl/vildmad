@@ -12,24 +12,62 @@
 </head>
 
 <body>
+    <div class="forage_body">
+        <div class="sidebar" id="minSidebar">
+            <a href="javascript:void(0)" class="closebtn" id="closebtn_id" onclick="closeNav()">&times;</a>
+            <a href="#" class="sidebar_button">Foraging</a>
+            <a href="#" class="sidebar_button">Recipes</a>
+        </div>
+    </div>
     <header>
+        <nav>
+            <div class="logo_link">
+                <a href="index.html">
+                    <img src="icons/vild-mad-logo.svg" alt="VildMad Logo" class="nav_icon">
+                </a>
+            </div>
+            <div class="nav_links">
+                <a href="foraging.html">
+                    <div class="buttonWrapper">
+                        <div class="buttonStyle">Foraging</div>
+                        <div class="buttonStyle buttonWhite">Foraging</div>
+                    </div>
+                </a>
+                <a href="recipes.html">
+                    <div class="buttonWrapper">
+                        <div class="buttonStyle">Recipes</div>
+                        <div class="buttonStyle buttonWhite">Recipes</div>
+                    </div>
+                </a>
+            </div>
+
+            <span class="burger_button" onclick="openNav()">
+                <img src="icons/burger.svg" alt="" class="nav_burger"></span>
+
+        </nav>
+        <!-- link city til cityhtml og beach med beachhtml -->
+
+    </header>
+    <main>
         <div class="background-image">
             <img src="billeder/madlavning.webp" alt="Background Image">
             <img src="billeder/madlavning.webp" alt="city">
         </div>
         <div class="header-content">
             <div class="mainh1">
-                <h1>City & Town</h1>
+                <a href="townsandcities.html">
+                    <h1>City & Town</h1>
+                </a>
             </div>
         </div>
         <div class="header-content2">
             <div class="mainh1">
-                <h1>The beach</h1>
+                <a href="beaches.html">
+                    <h1>The beach</h1>
+                </a>
             </div>
         </div>
-        <!-- link city til cityhtml og beach med beachhtml -->
-
-    </header>
+    </main>
 
 
 
