@@ -25,7 +25,7 @@ fetch(`https://ytcuyyezqmwdqdpjhotr.supabase.co/rest/v1/vildmad?`, {
 
 function showData(cards) {
   console.table(cards);
-  //Her looper vi
+  //Her looper vi de forskellige rows fra vores data tabel
   cards.forEach(showList);
 }
 

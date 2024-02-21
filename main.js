@@ -36,17 +36,11 @@ function getProduct() {
     .then(showData);
 }
 
-//function showData(items) {
-//console.table(items);
-//Her looper vi
-//items.forEach(showIngredient);
-//}
-
 function showData(ingredient) {
   console.log(ingredient);
-  //const temp = document.querySelector("#forageCardTemplate").content;
+
   const singleCard = ingredient[0];
-  //const copy = temp.cloneNode(true);
+  //Herfra vil vi ændre indholdet af alt lige fra tekst, billeder og links.
   document.querySelector("h1").textContent = singleCard.title;
   document.querySelector("p.find_p").textContent = singleCard.wheretofind;
   document.querySelector("p.spot_p").textContent = singleCard.howtospot;
