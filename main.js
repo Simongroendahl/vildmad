@@ -21,32 +21,42 @@ function closeNav() {
   document.getElementById("minSidebar").classList.remove("open");
 }
 
-fetch("https://ytcuyyezqmwdqdpjhotr.supabase.co/rest/v1/vildmad", {
-  method: "GET",
-  headers: {
-    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl0Y3V5eWV6cW13ZHFkcGpob3RyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc5NDY4OTcsImV4cCI6MjAyMzUyMjg5N30.F5qT6xHF4HXJc6yuBAtGegp4xfqgo5aM29_Yg2767LA",
-  },
-})
-  .then(res => res.json())
-  .then(showData);
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
+//const url = `https://ytcuyyezqmwdqdpjhotr.supabase.co/rest/v1/vildmad?id=eq.${id}`;
 
-function showData(items) {
-  console.table(items);
-  //Her looper vi
-  items.forEach(showIngredient);
+function getProduct() {
+  fetch(`https://ytcuyyezqmwdqdpjhotr.supabase.co/rest/v1/vildmad?id=eq.${id}`, {
+    method: "GET",
+    headers: {
+      apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl0Y3V5eWV6cW13ZHFkcGpob3RyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc5NDY4OTcsImV4cCI6MjAyMzUyMjg5N30.F5qT6xHF4HXJc6yuBAtGegp4xfqgo5aM29_Yg2767LA",
+    },
+  })
+    .then(res => res.json())
+    .then(showData);
 }
 
-function showIngredient(ingredient) {
-  const temp = document.querySelector("#forageCardTemplate").content;
-  const copy = temp.cloneNode(true);
-  copy.querySelector("h1").textContent = ingredient.title;
-  copy.querySelector("p.find_p").textContent = ingredient.wheretofind;
-  copy.querySelector("p.spot_p").textContent = ingredient.howtospot;
-  copy.querySelector("p.pick_p").textContent = ingredient.howtopick;
-  copy.querySelector("p.reading_p").textContent = ingredient.continuedreading;
-  copy.querySelector("img.profile_img").src = ingredient.image;
-  copy.querySelector("a.reading_link").href = ingredient.about_me_link;
-  copy.querySelector("a.reading_link2").href = ingredient.about_me_link;
+//function showData(items) {
+//console.table(items);
+//Her looper vi
+//items.forEach(showIngredient);
+//}
+
+function showData(ingredient) {
+  console.log(ingredient);
+  //const temp = document.querySelector("#forageCardTemplate").content;
+  const singleCard = ingredient[0];
+  //const copy = temp.cloneNode(true);
+  document.querySelector("h1").textContent = singleCard.title;
+  document.querySelector("p.find_p").textContent = singleCard.wheretofind;
+  document.querySelector("p.spot_p").textContent = singleCard.howtospot;
+  document.querySelector("p.pick_p").textContent = singleCard.howtopick;
+  document.querySelector("p.reading_p").textContent = singleCard.continuedreading;
+  document.querySelector("img.profile_img").src = singleCard.image;
+  document.querySelector("a.reading_link").href = singleCard.about_me_link;
+  document.querySelector("a.reading_link2").href = singleCard.about_me_link;
   const parent = document.querySelector("#ingredientsGrid");
-  parent.appendChild(copy);
+  //parent.appendChild(copy);
 }
+
+getProduct();
