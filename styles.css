@@ -102,6 +102,12 @@ a {
   color: var(--black);
 }
 
+li {
+  font-family: var(--font-family-p);
+  font-size: var(--h3-resizable);
+  color: var(--black);
+}
+
 h1,
 h2,
 h3,
@@ -177,6 +183,10 @@ p {
 .buttonStyle:active {
   background-color: #e3c21a;
 }
+
+/*.buttonStyle:hover {
+  background-color: #e3c21a;
+}*/
 
 .buttonWrapper:hover {
   transform: scale(1.1);
