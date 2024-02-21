@@ -11,6 +11,16 @@ function sidenVises() {
   console.log("sidenVises");
 }
 
+function openNav() {
+  //document.getElementById("minSidebar").style.width = "20%";
+  document.getElementById("minSidebar").classList.add("open");
+}
+
+function closeNav() {
+  //document.getElementById("minSidebar").style.width = "0";
+  document.getElementById("minSidebar").classList.remove("open");
+}
+
 fetch("https://ytcuyyezqmwdqdpjhotr.supabase.co/rest/v1/vildmad", {
   method: "GET",
   headers: {

@@ -4,10 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Foraging</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="layout.css">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
+    <div class="sidebar" id="minSidebar">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn_id" onclick="closeNav()">&times;</a>
+        <a href="#" class="sidebar_button">Foraging</a>
+        <a href="#" class="sidebar_button">Recipes</a>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo_link">
+                <a href="index.html">
+                    <img src="icons/vild-mad-logo.svg" alt="VildMad Logo" class="nav_icon">
+                </a>
+            </div>
+            <div class="nav_links">
+                <a href="foraging.html">
+                    <div class="buttonWrapper">
+                        <div class="buttonStyle">Foraging</div>
+                        <div class="buttonStyle buttonWhite">Foraging</div>
+                    </div>
+                </a>
+                <a href="recipes.html">
+                    <div class="buttonWrapper">
+                        <div class="buttonStyle">Recipes</div>
+                        <div class="buttonStyle buttonWhite">Recipes</div>
+                    </div>
+                </a>
+            </div>
+
+            <span class="burger_button" onclick="openNav()"></span>
+
+        </nav>
+    </header>
 
 </body>
 

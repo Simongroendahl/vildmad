@@ -38,7 +38,7 @@
 
   /* Font sizes */
 
-  --h1-resizable: clamp(24px, 6em, 100px);
+  --h1-resizable: clamp(3rem, 7vw, 7rem);
   --h2-resizable: clamp(24px, 3em, 60px);
   --h3-resizable: clamp(18px, 1.6em, 60px);
 }
@@ -63,6 +63,11 @@ body {
 
 .forage_body {
   background-color: var(--purple);
+}
+
+#ingredientsGrid {
+  margin: auto;
+  width: 100%;
   max-width: 1250px;
 }
 

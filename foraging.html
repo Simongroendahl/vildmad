@@ -11,6 +11,12 @@
 </head>
 
 <body class="forage_body">
+    <div class="sidebar" id="minSidebar">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn_id" onclick="closeNav()">&times;</a>
+        <a href="#" class="sidebar_button">Foraging</a>
+        <a href="#" class="sidebar_button">Recipes</a>
+    </div>
+
     <header>
         <nav>
             <div class="logo_link">
@@ -32,19 +38,20 @@
                     </div>
                 </a>
             </div>
+
+            <span class="burger_button" onclick="openNav()"></span>
+
         </nav>
     </header>
 
     <main class="foraging_wrapper">
-        <div class="bread_crumbs">
-            <a href="" class="bread_links">Cities & Towns</a>
-            <img src="icons/forward.svg" alt="Forward icon" class="icon">
-            <a href="" class="bread_links">Villa Area</a>
-        </div>
-
-
 
         <section id="ingredientsGrid">
+            <div class="bread_crumbs">
+                <a href="" class="bread_links">Landscapes</a>
+                <img src="icons/forward.svg" alt="Forward icon" class="icon">
+                <a href="" class="bread_links">Towns</a>
+            </div>
             <template id="forageCardTemplate">
                 <article class="forageCard">
                     <div class="col-1">
@@ -87,9 +94,12 @@
                             <div class="buttonStyle buttonWhite">About me</div>
                         </div>
                     </a>
-                    <p class="forageViewCounter">Wow! You're viewer nr. <span class="viewCount"></span>!</p>
                 </article>
             </template>
+        </section>
+        <section class="warning">
+            <img src="icons/warning.svg" alt="Warning icon" class="nav_icon">
+            <p class="warning_p"></p>
         </section>
     </main>
 
