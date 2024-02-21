@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foraging</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="layout.css">
+    <script src="ingredientlist.js" defer></script>
+</head>
+
+<body class="forageList_body">
+    <div class="sidebar" id="minSidebar">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn_id" onclick="closeNav()">&times;</a>
+        <a href="#" class="sidebar_button">Foraging</a>
+        <a href="#" class="sidebar_button">Recipes</a>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo_link">
+                <a href="index.html">
+                    <img src="icons/vild-mad-logo.svg" alt="VildMad Logo" class="nav_icon">
+                </a>
+            </div>
+            <div class="nav_links">
+                <a href="foraging.html">
+                    <div class="buttonWrapper">
+                        <div class="buttonStyle">Foraging</div>
+                        <div class="buttonStyle buttonWhite">Foraging</div>
+                    </div>
+                </a>
+                <a href="recipes.html">
+                    <div class="buttonWrapper">
+                        <div class="buttonStyle">Recipes</div>
+                        <div class="buttonStyle buttonWhite">Recipes</div>
+                    </div>
+                </a>
+            </div>
+
+            <span class="burger_button" onclick="openNav()">
+                <img src="icons/burger.svg" alt="" class="nav_burger"></span>
+
+        </nav>
+    </header>
+    <main class="wrapperSize">
+        <h1 class="forageTitle">Ingredients:</h1>
+        <section>
+
+        </section>
+        <section class="listGrid" id="listParent">
+            <template id="forageListTemplate">
+                <article class="forageCardList">
+                    <div class="cardListWrapper">
+                        <img src="" alt="" class="profile_img">
+                        <h3></h3>
+
+                    </div>
+                </article>
+            </template>
+        </section>
+
+    </main>
+    <section class="recipe_link_wrapper">
+        <div class="content_wrapper">
+            <video src="video/berries.webm" autoplay loop muted class="video_style"></video>
+            <div class="col-4">
+                <h2>Don't Miss Out On Our <br> <span class="emphasis_span">Delicious</span> <br>Recipes!</h2>
+                <a href="">
+                    <div class="buttonWrapper">
+                        <div class="buttonStyle">Read More</div>
+                        <div class="buttonStyle buttonWhite">Read More</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
