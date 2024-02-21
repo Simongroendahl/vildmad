@@ -1,3 +1,7 @@
+body {
+    background-color: var(--red);
+}
+
 .logo {
     display: flex;
     justify-content: center;
@@ -118,3 +122,26 @@
 }
 
 }
+
+footer {
+    background-color: var(--black);
+    padding: 20px 40px;
+    margin-top: 5rem;
+}
+
+.footerdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h3, p {
+    color: white;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+
+
