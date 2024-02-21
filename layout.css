@@ -76,16 +76,20 @@ nav {
 }
 
 .burger_button {
+  display: block;
   position: absolute;
-  background-image: url(icons/burgerbutton.svg);
-  background-repeat: no-repeat;
+  /*background-image: url(icons/menu.svg);
+  background-repeat: no-repeat;*/
   border-width: 0;
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   top: 1.6rem;
   right: 2rem;
   z-index: 9;
   aspect-ratio: 1;
+}
+
+.nav_burger {
 }
 
 .bread_crumbs {
@@ -118,7 +122,7 @@ nav {
 
 .profile_img {
   max-width: 430px;
-  min-width: 350px;
+  /*min-width: 350px;*/
   height: fit-content;
   border: var(--stroke);
 }
@@ -174,4 +178,16 @@ nav {
   .reading_link2 {
     display: none;
   }
+}
+
+.wrapperSize {
+  margin: auto;
+  max-width: var(--layout-width-xl);
+  padding: var(--padding-2);
+}
+
+.listGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
 }

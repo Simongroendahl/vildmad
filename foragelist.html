@@ -7,7 +7,6 @@
     <title>Foraging</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="layout.css">
-    <script src="main.js" defer></script>
     <script src="ingredientlist.js" defer></script>
 </head>
 
@@ -40,21 +39,25 @@
                 </a>
             </div>
 
-            <span class="burger_button" onclick="openNav()"></span>
+            <span class="burger_button" onclick="openNav()">
+                <img src="icons/burger.svg" alt="" class="nav_burger"></span>
 
         </nav>
     </header>
-    <section>
-        <template id="forageCardTemplate">
-            <article class="forageCard">
-                <img src="" alt="" class="profile_img">
-                <h2></h2>
-                <h3></h3>
-                </div>
-            </article>
-        </template>
-    </section>
-    <section></section>
+    <main class="wrapperSize">
+        <section class="listGrid" id="listParent">
+            <template id="forageListTemplate">
+                <article class="forageCardList">
+                    <div class="cardListWrapper">
+                        <img src="" alt="" class="profile_img">
+                        <h3></h3>
+                        <h4></h4>
+                    </div>
+                </article>
+            </template>
+        </section>
+        <section></section>
+    </main>
 
 </body>
 
