@@ -114,6 +114,7 @@ h4 {
 
 h2 {
   font-size: var(--h2-resizable);
+  white-space: initial;
 }
 
 h3 {

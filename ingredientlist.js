@@ -33,7 +33,6 @@ function showList(card) {
   const temp = document.querySelector("#forageListTemplate").content;
   const copy = temp.cloneNode(true);
   copy.querySelector("h3").textContent = card.title;
-  copy.querySelector("h4").textContent = card.title;
   copy.querySelector("img.profile_img").src = card.image;
   const parent = document.querySelector("#listParent");
   parent.appendChild(copy);

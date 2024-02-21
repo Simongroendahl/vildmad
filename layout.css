@@ -143,6 +143,56 @@ nav {
   padding: var(--padding-2) 0;
 }
 
+.wrapperSize {
+  margin: auto;
+  max-width: var(--layout-width-small);
+  padding: var(--padding-1);
+}
+
+.forageTitle {
+  margin-top: 4rem;
+}
+
+.forageCardList {
+  transition: ease 0.3s all;
+}
+
+.forageCardList:hover {
+  transform: scale(1.1);
+}
+
+.recipe_link_wrapper {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.col-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.content_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 1440px;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.recipe_img {
+  max-height: auto;
+  max-width: 100%;
+  border: var(--stroke);
+}
+
 @media only screen and (min-width: 831px) {
   .nav_links {
     display: flex;
@@ -178,12 +228,29 @@ nav {
   .reading_link2 {
     display: none;
   }
-}
 
-.wrapperSize {
-  margin: auto;
-  max-width: var(--layout-width-xl);
-  padding: var(--padding-2);
+  .wrapperSize {
+    margin: auto;
+    max-width: var(--layout-width-xl);
+    padding: 4rem 2rem;
+  }
+
+  .content_wrapper {
+    flex-direction: row;
+    gap: 4rem;
+    max-width: 1440px;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .recipe_img {
+    max-width: 50%;
+  }
+
+  .col-4 h2 {
+    margin-bottom: 1rem;
+  }
 }
 
 .listGrid {
