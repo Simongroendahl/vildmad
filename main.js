@@ -36,6 +36,7 @@ function showIngredient(ingredient) {
   copy.querySelector("p.reading_p").textContent = ingredient.continuedreading;
   copy.querySelector("img.profile_img").src = ingredient.image;
   copy.querySelector("a.reading_link").href = ingredient.about_me_link;
+  copy.querySelector("a.reading_link2").href = ingredient.about_me_link;
   const parent = document.querySelector("#ingredientsGrid");
   parent.appendChild(copy);
 }

@@ -20,8 +20,14 @@
 
   --padding-1: 8px;
   --padding-2: 1rem;
+  --padding-3: 2rem;
   --grid-gap-size: ;
   --button-padding: 12px 48px;
+
+  /* Layout width */
+  --layout-width-xl: 1440px;
+  --layout-width-medium: 1140px;
+  --layout-width-small: 960px;
 
   /* Fonts */
 
@@ -32,8 +38,8 @@
 
   /* Font sizes */
 
-  --h1-resizable: clamp(24px, 3em, 60px);
-  --h2-resizable: ;
+  --h1-resizable: clamp(24px, 6em, 100px);
+  --h2-resizable: clamp(24px, 3em, 60px);
   --h3-resizable: clamp(18px, 1.6em, 60px);
 }
 
@@ -50,13 +56,14 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: auto;
   min-height: 100vh;
   background-color: var(--yellow);
 }
 
 .forage_body {
   background-color: var(--purple);
+  max-width: 1250px;
 }
 
 img {
@@ -69,6 +76,11 @@ video {
   display: block;
   height: auto;
   width: 100%;
+}
+
+.nav_icon {
+  max-width: 90px;
+  height: auto;
 }
 
 .icon {
@@ -89,6 +101,10 @@ h4 {
   font-size: var(--h1-resizable);
   color: var(--black);
   white-space: nowrap;
+}
+
+h2 {
+  font-size: var(--h2-resizable);
 }
 
 h3 {
@@ -142,6 +158,10 @@ p {
   z-index: 1;
   transform: translate(6px, 6px);
   transition: ease 0.3s all;
+}
+
+.buttonStyle:active {
+  background-color: #e3c21a;
 }
 
 .buttonWrapper:hover {
