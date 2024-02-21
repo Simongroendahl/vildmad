@@ -1,5 +1,5 @@
 * body {
-  background-color: var(--turquoise);
+  background-color: #17bebb;
 }
 
 @media only screen and (min-width: 768px) {
@@ -12,6 +12,49 @@
     position: relative;
   }
 
+  .hero2 {
+    text-align: center;
+    height: 750px;
+    background-image: url(billeder/kombucha.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+  }
+
+  .hero3 {
+    text-align: center;
+    height: 750px;
+    background-image: url(billeder/pastatang.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .hero4 {
+    text-align: center;
+    height: 750px;
+    background-image: url(billeder/pesto.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .hero5 {
+    text-align: center;
+    height: 750px;
+    background-image: url(billeder/greensoup.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .overlay2 {
+    padding-top: 500px;
+    font-size: 50px;
+    font-family: var(--font-h);
+  }
+
   .grid_raavarer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -19,6 +62,21 @@
     margin-right: 10rem;
     gap: 5rem;
     margin-right: 10px;
+  }
+
+  .flex_recipe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*margin-left: 5rem;*/
+    margin: auto;
+    max-width: 1000px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ingredients_flex {
+    display: flex;
+    flex-direction: column;
   }
 
   .grid_recipes img {
@@ -48,7 +106,9 @@
     margin-left: 5rem;
     align-items: center;
   }
-
+  .h1_recipes {
+    color: white;
+  }
   h2 {
     text-align: center;
     margin-right: 10rem;
