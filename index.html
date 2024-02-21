@@ -1,17 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front page</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="indexstyle.css">
     <script src="main.js" defer></script>
 </head>
+<body class="forageList_body">
+    <div class="sidebar" id="minSidebar">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn_id" onclick="closeNav()">&times;</a>
+        <a href="#" class="sidebar_button">Foraging</a>
+        <a href="#" class="sidebar_button">Recipes</a>
+    </div>
 
-<body>
+    <header>
+        <nav>
+            <div class="logo_link">
+                <a href="index.html">
+                    <img src="icons/vild-mad-logo.svg" alt="VildMad Logo" class="nav_icon">
+                </a>
+            </div>
+            <div class="nav_links">
+                <a href="foraging.html">
+                    <div class="buttonWrapper">
+                        <div class="buttonStyle">Foraging</div>
+                        <div class="buttonStyle buttonWhite">Foraging</div>
+                    </div>
+                </a>
+                <a href="recipes.html">
+                    <div class="buttonWrapper">
+                        <div class="buttonStyle">Recipes</div>
+                        <div class="buttonStyle buttonWhite">Recipes</div>
+                    </div>
+                </a>
+            </div>
 
+            <span class="burger_button" onclick="openNav()">
+                <img src="icons/burger.svg" alt="" class="nav_burger"></span>
+
+        </nav>
+    </header>
+<main>
+    <div class="grid_2-1">
+        <div class="logo">
+            <img src="billeder/logo.webp" alt="logo">
+        </div>
+        <div class="rectangle-container">
+            <h2>Welcome to our site! Here you can find locations for foraging, find information about produce and get inspiration for recipes</h2>
+        </div>
+        <div class="imageflex">
+            <div class="imageContainer">
+            <a href="foraging.html"><img class="foraging" src="billeder/foraging_rigtig.webp" alt="foraging">
+                <h2>Foraging</h2></a>
+                <p class="index-p">Discover different locations for foraging</p>
+            </div>
+        
+            <div class="imageContainer">
+                <a href="recipes.html"><img class="foraging" src="billeder/recipes_rigtig.webp" alt="foraging">
+                    <h2>Recipes</h2></a>
+                    <p class="index-p">Get inspiration for some recipes with the produce you have foraged</p>
+                </div>
+        </div>
+    </div>
+</main>
 </body>
-
 </html>

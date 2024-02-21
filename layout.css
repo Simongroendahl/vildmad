@@ -199,6 +199,15 @@ nav {
   border: var(--stroke);
 }
 
+.warning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 4rem 0;
+  gap: 24px;
+}
+
 @media only screen and (min-width: 831px) {
   .nav_links {
     display: flex;
@@ -225,6 +234,7 @@ nav {
 
   .col-2 {
     order: -1;
+    padding-bottom: 2rem;
   }
 
   .reading_link {
