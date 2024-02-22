@@ -172,7 +172,7 @@
   position: absolute;
   bottom: 8px;
   left: 30px;
-  top: 1700px;
+  top: 1900px;
   font-size: 38px;
   color: white;
 }
@@ -194,7 +194,7 @@
   position: absolute;
   bottom: 8px;
   left: 640px;
-  top: 1700px;
+  top: 1900px;
   font-size: 38px;
   color: white;
 }
@@ -219,7 +219,7 @@
   position: absolute;
   bottom: 8px;
   left: 1240px;
-  top: 1700px;
+  top: 1900px;
   font-size: 38px;
   color: white;
 }
@@ -444,4 +444,25 @@
   right: 550px;
   color: white;
   font-size: 55px;
+}
+
+footer {
+  background-color: var(--black);
+  padding: 20px 40px;
+  margin-top: 49rem;
+}
+
+.footerdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h3,
+p {
+  color: white;
+}
+
+.footer-logo img {
+  width: 100px;
 }
